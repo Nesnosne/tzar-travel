@@ -1,0 +1,52 @@
+#notification {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.notification-message {
+    overflow: auto;
+    background-color: #038703;
+    color: #f0f0f0;
+    padding: 5px 30px 5px 20px;
+    margin: 0 0 10px;
+    min-height: 1em;
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+
+    min-width: 40px;
+    white-space: nowrap;
+
+    clear: right;
+    float: right;
+
+    transition: all 0.5s linear;
+
+	font-family: monospace;
+	font-size: 120%;
+}
+
+.notification-message.error {
+    background-color: #e91d41;
+}
+
+.notification-message.warn {
+    background-color: #ff8700;
+	color: #111;
+}
+
+.notification-message.closed {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.notification-message:after {
+    content: '×';
+    position: absolute;
+    right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+

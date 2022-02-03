@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* UNDECOR */
+
+/*ul.unset{*/
+/*margin-left:0;*/
+/*}*/
+
+ul.undecor {
+	margin-top:0;
+	margin-bottom:0;
+	padding-left: 0;
+	overflow: visible;
+	list-style: none;
+}
+
+
+.undecor > li {
+	list-style: none;
+	background-image: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+/**************************************************************************/
+/* ХЕЛПЕРЫ */
+/**************************************************************************/
+
+.float-right {
+	float: right;
+	display: block;
+}
+
+.overflow-auto {
+	overflow: auto;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-none {
+	float: none;
+}
+
+.width-auto > .ui-inputfield,
+.width-auto {
+	width: auto !important;
+}
+
+.text-transparent {
+	color: transparent !important;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-unbold {
+	font-weight: normal;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+
+.font-size-normal {
+	font-size: 1rem;
+}
+
+.margin-bottom {
+	margin-bottom: 10px;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0 !important;
+}
+
+.small-margin-bottom {
+	margin-bottom: 2px !important;
+}
+
+.no-margin-right {
+	margin-right: 0 !important;
+}
+
+.no-margin-top {
+	margin-top: 0 !important;
+}
+
+
+
+.no-border,
+.no-border td,
+.no-border tr {
+	border-width: 0 !important;
+	border: none !important;
+}
+
+.height-100-percents {
+	height: 100%;
+}
+
+
+
+.wide,
+.wide.ui-menubutton > .ui-button {
+	width: 100% !important;
+}
+
+/**************************************************************************/
+/* фиксированные ширины */
+/**************************************************************************/
+
+
+
+.ui-helper-reset-border-background {
+	background: none !important;
+	border: none !important;
+}
+
+.ui-helper-reset-indents {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+
+.comma-between-span > span ~ span:before {
+	content: ', ';
+}
+
+table.align-top td,
+.align-top {
+	vertical-align: top;
+}
+
+.align-bottom {
+	vertical-align: bottom;
+}
+
+.text-ellipsis {
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+
+span.text-ellipsis[class*="max-width-"] {
+	width: auto;
+}
+
+th.text-ellipsis,
+td.text-ellipsis {
+	display: table-cell;
+}
+
+.text-nowrap {
+	white-space: nowrap !important;
+}
+
+.text-wrap {
+	white-space: normal !important;
+}
+
+.break-word {
+	word-wrap: break-word !important;
+}
+
+.break-all {
+	word-break: break-all !important;
+	white-space: normal !important;
+}
+
+span.break-all {
+	display: block;
+}
+
+.monospace {
+	font-family: monospace;
+}
+
+.prewrap {
+	white-space: pre-wrap;
+}
+
+.break-word {
+	word-wrap: break-word;
+}
+
+.display-inline-block {
+	display: inline-block;
+}
+

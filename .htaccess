@@ -1,0 +1,23 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:ydujas
+ErrorDocument 404 /404.html
+Options +Indexes
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE ydujas:ERRORPAGEID
+
+AddDefaultCharset UTF-8
+
+#php_flag zlib.output_compression On
+
+DirectoryIndex /index.html
+
+
+# html5 pushstate (history) support:
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !index
+    RewriteRule (.*) index.html [L]
+</ifModule>
